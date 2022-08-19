@@ -89,8 +89,12 @@ const SignUp = () => {
               персональных данных.
             </p>
 
-            {status === true && <Message success={status}>{message}</Message>}
-            {status === false && <Message success={status}>{message}</Message>}
+            {status === true && !isLoading && (
+              <Message success={status}>{message}</Message>
+            )}
+            {status === false && !isLoading && (
+              <Message success={status}>{message}</Message>
+            )}
           </Form>
         </StyledSignUp>
       )}

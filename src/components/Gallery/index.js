@@ -32,7 +32,7 @@ const Gallery = ({ images }) => {
 
   useEffect(() => {
     setSlicedImages(images?.slice(0, visible));
-  }, [visible]);
+  }, [images, visible]);
 
   const renderImages = (images) => {
     return images.map(({ id, src }, index) => (
@@ -40,7 +40,7 @@ const Gallery = ({ images }) => {
         onClick={() => setCurrentImageIndex(index)}
         key={`image-${id}`}
       >
-        <img src={src} alt={`image-${id}`} />
+        <img src={src} alt={`pic-${id}`} />
       </ImageWrapper>
     ));
   };

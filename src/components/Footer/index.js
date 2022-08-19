@@ -83,11 +83,11 @@ const Footer = () => (
               <FaInstagram />
             </a>
 
-            <a target="_blank" rel="noreferrer" href="#">
+            <a target="_blank" rel="noreferrer" href="https://telegram.org">
               <FaTelegram />
             </a>
 
-            <a target="_blank" rel="noreferrer" href="#">
+            <a target="_blank" rel="noreferrer" href="https://facebook.com">
               <FaFacebook />
             </a>
           </Socials>
