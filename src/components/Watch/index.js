@@ -14,11 +14,9 @@ import Modal from "../Modal";
 //importing images
 import VideoPoster from "../../assets/images/site/hi-tech-room.jpg";
 
-//importing videos
-import ConstructionVideo from "../../assets/videos/construction.mp4";
-
 //importing svg icons
 import { PlaySVG } from "../../assets/svg/play-icon-svg";
+import constructionVideo from "../../assets/videos/construction.mp4";
 
 const Watch = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -57,7 +55,7 @@ const Watch = () => {
         }}
       >
         <video controls data-video-src="true">
-          <source src={ConstructionVideo} type="video/mp4" />
+          <source src={constructionVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Modal>
