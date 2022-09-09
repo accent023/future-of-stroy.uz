@@ -31,7 +31,9 @@ const Footer = () => (
           <div className="phones">
             <div className="phones__item">
               <CallMeSVG />
-              <a href="tel:+998974708979">+(998)97 470-89-79</a>
+              <a href="tel:+998974708979">
+                +(998)97 470-89-79 | Виталий Павлович
+              </a>
             </div>
           </div>
 
